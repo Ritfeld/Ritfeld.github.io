@@ -27,7 +27,7 @@ h2 {
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
-    width: 2em; 
+    width: 80em; 
 }
 
 header, footer, footer a {
