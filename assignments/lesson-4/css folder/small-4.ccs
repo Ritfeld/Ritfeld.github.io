@@ -9,7 +9,7 @@ main {
 
 h1 {
 
-    font-family: 'kusso one', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 p {
