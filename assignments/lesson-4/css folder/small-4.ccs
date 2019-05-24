@@ -1,17 +1,20 @@
 body {
-    background-color: #B9B90D
+    font-size: 18px;
 }
 
-header {
+main {
     margin: 10px auto;
-    background-color: #fff;
-    border: 1px solid #bbb;
-    box-shadow: 0 0 30px #777;
-    text-align: center;
+    width: 960px;
 }
 
-header img, .headings {
-    display: inline- block;
-    vertical-align: middle;
-    margin: 10px;
+h1 {
+
+    font-family: 'kusso one', sans-serif;
+}
+
+p {
+   border: 1px solid #333;
+   padding: 7px;
+   background-color: #ddd;
+   text-align: justify;
 }
