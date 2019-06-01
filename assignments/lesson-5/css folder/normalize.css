@@ -63,6 +63,18 @@ border: 1px solid #333;
 width: 960px;
 height: 300px;
   }
+
+  .herodiv {
+    position: relative;
+
+  }
+
+  .weathersummary {
+      position: absolute;
+      top: 1rem;
+  } {
+
+  }
   /**
    * Correct the font size and margin on `h1` elements within `section` and
    * `article` contexts in Chrome, Firefox, and Safari.
