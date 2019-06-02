@@ -43,7 +43,6 @@
      .navigation li { display: inline-block; margin-right: 1rem;}	
      .navigation li a { color: yellow;}
    }
-  }
   
   /**
    * Render the `main` element consistently in IE.
@@ -82,10 +81,9 @@ height: 250px;
       border: 1px solid green;
       padding: .5rem;
       box-shadow: 0 0 30px #777; 
-  } {
-
-  }
-  /**
+  } 
+  
+    /**
    * Correct the font size and margin on `h1` elements within `section` and
    * `article` contexts in Chrome, Firefox, and Safari.
    */
