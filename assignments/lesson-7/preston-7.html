@@ -1,139 +1,137 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=l">
-        <title>The Weather Information Site | Enjoy Preston City</title>
-        <meta name="author" content="Willem J.Ritfeld">
-        <meta name="description" content="Preston City Weather Information">
-         <!-- external style references in the proper cascading order --> 
-        <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap" rel="stylesheet"> <!-- Google API font reference -->
-        <link rel="stylesheet" href="css/folder/normalize.css">
-        <link rel="stylesheet" href="css/folder/small-5.css">
-        <link rel="stylesheet" href="css/folder/large-5.css"> 
-    </head>          
-     <body>
-          <header>
-                 <img src="https://cdn.apk-cloud.com/detail/image/com.fivestar.myplaceweather-w130.png?r3" width="180" height="180" alt="Place Weather-w130 Logo">
-                 <h1>The Weather Information Site</h1>
-                    <div class= "Subheading"><strong>Enjoy the Weather!</strong></div>
-         </header>
-                 <!-- site navigation use placeholder references -->
-                 <nav class="fixed">
-                 <button onclick="toggleNavMenu()">&#9776;</button>
-                 <ul class="topnav" id="Preston">
-                           <li><a href="#">Home</a></li>
-                           <li class="active"><a href="#">Preston</a></li>
-                           <li><a href="#">Soda Springs </a></li>
-                           <li><a href="#">Fish Haven</a></li>
-                           <li><a href="#">Storm Center</a></li>
-                           <li><a href="#">Gallery</a></li>
-                       </ul>
-                     </nav>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Franklin City | Weather Sentinel</title>
+  <meta name="author" content="Vladislovas Karalius">
+  <meta name="description" content="Franklin City Weather Forecast">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-7.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-7.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large-7.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/9018C728-CE0E-D54D-A8BE-AF3AD3470D66/main.js" charset="UTF-8"></script></head>
+<body>
 
-                     <main>
+  <header>
+    <img src="images/logo.png" alt="Weather Sentinel Logo" width="80">
+    <h1>Weather Sentinel</h1>
+    <div class="subheading">We watch the weather for you.</div>
+  </header>
 
-                         <div class="flex1">
-                         <section>  
-                         <h2>The City of Preston</h2>
-                         <figure>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Preston_Flag_Market.jpg/1920px-Preston_Flag_Market.jpg"  width="960" height="463" alt="Preston Flag Market">
-                         </figure>
-                        </section>
-                        
-                        <section class="summary">
-                           <h3>Weather Summary</h3>
+  <!-- site navigation use placeholder references -->
+  <nav class="fixed">
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul class="topnav" id="hamburger">
+    	<li><a href="#">Home</a></li>
+    	<li class="active"><a href="#">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="#">Storm Center</a></li>
+    	<li><a href="gallery-7.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    
+    <div class="flex1">
+      <section>
+        <h2>The City of Franklin</h2>
+        <figure>
+          <img src="images/franklin-small.jpg" alt="Franklin"
+               sizes="100vw"
+               srcset="images/franklin-small.jpg 600w,
+                       images/franklin-medium.jpg 1024w,
+                       images/franklin-large.jpg 1280w">
+        </figure>
+      </section>
 
-                           <div class="flex2"></div>
-                           <div class="highlow">   
-                            <p>High: <span class="data">83&deg;F</span></p>
-                            <p>Low: <span class="data">45&deg;F</span></p>
-                            </div>
-                            <div class="current">
-                            <div class="vertical">
-                                Sunny
-                            </div>    
-                            <picture>
-                                    <img src="http://www.scalsys.com/1pngs/sunny-png/sunny_png_1333680.png" width="180" height="180" alt="com fivestar myplaceweather-w130">
-                            </picture>
-                           </div>
-                           <div class="conditions">
-                                <p>Precipitation: <span class="data">1%</span></p>
-                                <p>Wind Speed: <span class="data">4 mpg SW</span></p>
-                            </div>
-                        </section>
-                        </div>
+      <section class="summary">
+        <h3>Weather Summary</h3>
 
-                        <section class="forecast">
-                                <h3>10 Day Forecast</h3>
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>Day 1</th>
-                                            <th>Day 2</th>
-                                            <th>Day 3</th>
-                                            <th>Day 4</th>
-                                            <th>Day 5</th>
-                                            <th>Day 6</th>
-                                            <th>Day 7</th>
-                                            <th>Day 8</th>
-                                            <th>Day 9</th>
-                                            <th>Day 10</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>89&deg;F</td>
-                                            <td>87&deg;F</td>
-                                            <td>78&deg;F</td>
-                                            <td>75&deg;F</td>
-                                            <td>72&deg;F</td>
-                                            <td>72&deg;F</td>
-                                            <td>79&deg;F</td>
-                                            <td>83&deg;F</td>
-                                            <td>85&deg;F</td>
-                                            <td>89&deg;F</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </section>
+        <div class="flex2">
+          <div class="highlow">
+            <p>High: <span class="data"><span id="high">90</span>&deg;F</span></p>
+            <p>Low: <span class="data"><span id="low">66</span>&deg;F</span></p>
+          </div>
+          <div class="current">
+            <div class="vertical">
+              Sunny
+            </div>
+            <picture>
+                <img src="images/sunny.jpg" alt="Sunny" width="70" height="70">
+            </picture>
+          </div>
+          <div class="conditions">
+            <p>Precipitation: <span class="data">0%</span></p>
+            <p>Wind Speed: <span class="data"><span id="wind">5</span> mph SW</span></p>  
+          </div>
+          <div>
+            <p>Wind Chill: <span class="data"><span id="chill"></span>&deg;</span></p>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <section class="forecast">
+      <h3>10 Day Forecast</h3>
+      <table>
+	    <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+		</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+		</tbody>
+      </table>
+    </section>
+      
+    <article>
+      <h3>Franklin Breaks Record</h3>	
+      <div class="flex3">
+        <img src="images/city-news.jpg" alt="City News" width="400">
+        <p class="town-article">
+          Lorem ipsum dolor sit amet, veri volumus disputationi ne pro, solum integre id usu. Pro ad aperiri diceret intellegat, illud solet deseruisse id vix. His ad partiendo interpretaris, vis ne porro ponderum dignissim. Quo ea laudem docendi concludaturque, utinam ubique facilis pri te. An duo nullam dicunt eligendi. An per accusam pertinax intellegat. Lorem ipsum dolor sit amet, veri volumus disputationi ne pro, solum integre id usu. Pro ad aperiri diceret intellegat, illud solet deseruisse id vix. His ad partiendo interpretaris, vis ne porro ponderum dignissim. Quo ea laudem docendi concludaturque, utinam ubique facilis pri te. An duo nullam dicunt eligendi. An per accusam pertinax intellegat.
+        </p>
+      </div>
+    </article>		  
+  
+  </main>
+    
+  <footer>
+    <aside>
+      <p>Vladislovas Karalius, Lithuania</p>
+      <p><a href="mailto:vladislovas.karalius@gmail.com?Subject=Weather%20Sentinel">vladislovas.karalius@gmail.com</a></p>
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | Weather Sentinel | <span id="currentdate">Current Date Placeholder</span></p>
+  </footer>
 
-                            <article>
-                                    <h3>Preston Weather Records</h3>
-                                    <p class="town-article">
-                                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Beacon_Fell_235-35.jpg"  width="740" height="415" alt="Beacon Fell 23535">   
-                                        Preston Weather Forecast Providing a local 3 hourly Preston weather forecast of rain, sun, wind, humidity and temperature. The Long-range 10 day forecast also includes detail for Preston weather today.
-                                
-                                      <img src="https://www.visitnorthwest.com/images/14160.png"  width="740" height="360" alt="14160">
-                                    </p>
-                                 </article>
-                        </main>
-                         <footer>
-                            <aside>
-                                
-                            <h3>The Weather Information Site</h3>
-                            <ul>
-                                    <li>30 N 1 st E</li>
-                                    <li>Preston, ID 83263</li>
-                                    <li> 999.999.9999</li>
-                                    <li>theweatherinfosite</li>
-                            </ul>
-                            
-                            <img src="https://cdn.glitch.com/f1e5bce5-6e9e-46fb-87d5-6f95d2a6dcae%2F02a868bc-7b51-4b11-a0ab-ea2b64d4065e%252Fyoutube.png?1548265900333" alt="YouTube">
-                            <img src="https://cdn.glitch.com/f1e5bce5-6e9e-46fb-87d5-6f95d2a6dcae%2F02a868bc-7b51-4b11-a0ab-ea2b64d4065e%252Ffacebook.png?1548265267841" alt="Facebook">
-                              
-                            <a href="https://app.moqups.com/ysa06SrZoX/edit/page/ad64222d5" target="_blank">
-                         <img src="https://cdn.glitch.com/f1e5bce5-6e9e-46fb-87d5-6f95d2a6dcae%2F02a868bc-7b51-4b11-a0ab-ea2b64d4065e%252Finstagram.png?1548265919902" alt="Instagram"></a>
-                              
-                            
-                            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"></a> 
-                         </aside>
-                           
-                            <p class="footer-bar">&copy; Monday, 6 April 2020 | All Rights Reserved| CIT-230 | <span id="currentdate">Current Date Placeholder</span></p>
-                        <a href="https://www.byui.edu/online">BYU-Idaho Online Learning</a>
-                        </footer>
-                        
-                        <script src="scripts/Preston.js"></script>
-                        <script src="scripts/currentdate.js"></script>
-                 </body>
-               </html>
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/windchill.js"></script>
+
+</body>
+</html>
