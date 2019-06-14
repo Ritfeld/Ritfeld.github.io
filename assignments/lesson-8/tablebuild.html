@@ -1,61 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
- <meta name="viewport" content="width=device-width, initial-scale=l">
- <link rel="stylesheet" href="css/supporting.css">
- <style>
-     table, th, td {
+<style>
+thead {color:green;}
+tbody {color:blue;}
+tfoot {color:red;}
+
+table, th, td {
   border: 1px solid black;
-  border-collapse: collapse;
 }
-</style
+</style>
 </head>
- 
-body { 
-    font-size: 16px; 
-    line-height: 32px;
-    font-family: /* Ubuntu, sans-serif */;
-    color: /* #e7ffed */;
-}
 
-h1 {
-    font-size: /* x.xrem  (rem is a unit of measure) */;
-    color: /* #xxxxxx */;
-}
+<body>
 
-h2 {
-    font-size: /* x.xrem */;
-    text-align: center;
-    border-bottom: 1px solid #bbb;
-}
-
-header, main, footer {
-    margin: 1.25rem auto;
-    padding: .5rem;
-    max-width: /* xxxpx (px = pixel is a unit of measure)  */;
-}
-
-header, footer, footer a {
-    text-align: center;
-    background-color: /* */;
-    color: whitesmoke;
-}
-
-header img {
-    width: /*  */;
-    height: auto;
-    float: right;
-}
-
-footer {
-    font-size: /* smaller */;
-}
- 
- </style>
-    
-        
-      
-       
-       
-         
-    
+<table>
+  <thead>
+   <th>ACME Wildwest</th>
+      <th> </th>
+	  <th> </th>
+    </tr>
+    <tr>
+      <th>Period</th>
+      <th>Sales</th>
+	  <th>Sales Coal</th>
+    </tr>
+  </thead>
+  <tbody>
+ <tr>
+     <td>August</td>
+      <td>$3,590</td>
+	  <td>$4,000</td>
+    </tr>
+    <tr>
+      <td>September</td>
+      <td>$4,420</td>
+	   <td>$5,000</td>
+	</tr>
+	 <tr>
+      <td>October</td>
+      <td>$4,870</td>
+	   <td>$5,000</td>
+	</tr>
+	 <tr>
+      <td>November</td>
+      <td>$8,610</td>
+	   <td>$7,500</td>
+	</tr>
+	 <tr>
+      <td>Black Friday</td>
+      <td></td>
+	   <td>$3,200</td>
+	</tr>
+	<tr>
+      <td>December</td>
+      <td>$6,820</td>
+	   <td>$7,500</td>
+	</tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Compiled</td>
+      <td>12.20.2020</td>
+	  <td>by writfeld</td>
+    </tr>
+  </tfoot>
+</table>
+</body>
+</html>
