@@ -34,6 +34,8 @@ nav ul li {
 }
 nav ul li a {
     display: block;
+    padding: .5rem 1rem;
+    background-color: #f89c1f;
 }
 h2 {
     font-size: /* x.xrem */;
