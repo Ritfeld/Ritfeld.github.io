@@ -26,9 +26,8 @@ header img, .headings {
 	vertical-align: middle;
 	margin: 10px;
 }
-h1 {
-    font-size: /* x.xrem  (rem is a unit of measure) */;
-    color: /* #xxxxxx */;
+header h1 {
+    color: #0076bb;
 }
 
 h2 {
