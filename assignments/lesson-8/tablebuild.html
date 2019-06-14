@@ -1,96 +1,50 @@
-<!DOCTYPE html>
-<html>
+<!dOCTYPE html>
+<html lang="en">
 <head>
- <meta name="viewport" content="width=device-width, initial-scale=l">
- <link rel="stylesheet" href="css/supporting.css">
-<style>
-thead,
-tfoot {
-    background-color: #3f87a6;
-    color: #e7f0ed;
-	
-}
-
-body { 
-    font-size: 16px; 
-    line-height: 32px;
-    font-family: /* Ubuntu, sans-serif */;
-    color: /* #e7ffed */;
-	
-}
-
-caption {
-    padding: 10px;
-    caption-side: bottom;
-}
-
-table {
-    border-collapse: collapse;
-    border: 2px solid rgb(200, 200, 200);
-    letter-spacing: 1px;
-     font-family: /* Ubuntu, sans-serif */;
-    font-size: .8rem;
-	 color: /* #628ca6 */;
-	 
-}
-
-td,
-th {
-    border: 1px solid rgb(190, 190, 190);
-    padding: 5px 10px;
-}
-
-td {
-    text-align: center;
-}
-t {
-    text-align: center;
-}
-
-</style>
+    <title>Table Build</title>
+    <meta charset="utf-8">
+ <link href="table.css" type="text/css" rel="stylesheet">
 </head>
-
 <body>
-
-<table>
-  <thead>
-   <th>ACME Wildwest</th>
-      <th></th>
-	  <th></th>
-    </tr>
-    <tr>
+    <table>
+         <thead>
+             <tr class="header1">
+                <th colspan="3">ACME Wildwest</th>
+             </tr>
+            </thead>        
+      <tbody>
+    <tr class="Period">
       <th>Period</th>
       <th>Sales</th>
-	  <th>Sales Coal</th>
+      <th>Sales Coal</th>
     </tr>
-  </thead>
-  <tbody>
- <tr>
-     <td>August</td>
+  <tr class="august">
+ <td>August</td>
       <td>$3,590</td>
 	  <td>$4,000</td>
     </tr>
-    <tr>
+    <tr class="september">
       <td>September</td>
       <td>$4,420</td>
 	   <td>$5,000</td>
 	</tr>
-	 <tr>
+	 <tr class="october">
       <td>October</td>
       <td>$4,870</td>
 	   <td>$5,000</td>
 	</tr>
-	 <tr>
+	 <tr class="November">
       <td>November</td>
       <td>$8,610</td>
-	   <td>$7,500</td>
+	   <td class="done">$7,500</td>
 	</tr>
-	 <tr>
-      <td>Black Friday</td>
-      <td></td>
-	   <td>$3,200</td>
+	 <tr class="black">
+      <td= colspan="1"> ==$0
+       <i>Black Friday</i>   
+    </td>
+    <td colspan="2">$3,200</td>
 	</tr>
-	<tr>
+	<tr class="december">
       <td>December</td>
       <td>$6,820</td>
 	   <td>$7,500</td>
@@ -98,11 +52,14 @@ t {
   </tbody>
   <tfoot>
     <tr>
-      <td>Compiled</td>
-      <td>12.20.2020</td>
-	  <td>by writfeld</td>
+      <td colspan="3">Compiled 12.20. 2020 by writfeld</td>
     </tr>
   </tfoot>
 </table>
+<br>
+<button>
+    <a href=""</a>
+ 
+</button>
 </body>
 </html>
